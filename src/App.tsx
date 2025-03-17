@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import {
+  FaSearch,
   FaSun,
   FaMoon,
   FaMapMarkerAlt,
@@ -72,7 +73,6 @@ const App: React.FC = () => {
           onChange={(e) => setSearch(e.target.value)}
         />
 
-        {error && <p className="text-red-500 mt-2.5">{error}</p>}
         <button
           className="bg-blue-600 text-white px-4 py-2 rounded-lg"
           onClick={handleSearch}
@@ -80,7 +80,8 @@ const App: React.FC = () => {
           Search
         </button>
       </div>
-
+      {error && <p className="text-red-500 mt-2.5">{error}</p>}
+      
       {user && (
         <div className="mt-6 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-xl">
           <div className="flex items-center gap-4">
@@ -112,7 +113,7 @@ const App: React.FC = () => {
               <p className="text-lg font-bold">{user.following}</p>
             </div>
           </div>
-          <div className=" flex mt-4 space-y-2 font-extralight">
+          <div className="mt-4 space-y-2 font-extralight">
             <p>
               <FaMapMarkerAlt className="inline" />{" "}
               {user.location || "Not Available"}
