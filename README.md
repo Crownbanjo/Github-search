@@ -23,11 +23,11 @@ This is a React application that allows users to search for GitHub profiles usin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/github-user-search.git
+   git clone https://github.com/Crownbanjo/Github-search.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd github-user-search
+   cd Github-search
    ```
 3. Install dependencies:
    ```bash
@@ -44,9 +44,6 @@ This is a React application that allows users to search for GitHub profiles usin
 - Click the search button to fetch user details.
 - Toggle between dark and light mode.
 
-## Screenshots
-
-(Add screenshots here if needed)
 
 ## Deployment
 
@@ -78,5 +75,5 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## Author
 
-**Your Name** - Adebanjo Micheal
+**ADEBANJO MICHEAL** 
 
